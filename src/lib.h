@@ -29,6 +29,7 @@ enum animal_type {
 	COW, /**< Корова */
 	DOG, /**< Собака */
 	CAT, /**< Кіт */
+	HUMAN, /**<Людина */
 	ANIMAL_TYPE_COUNT /**< Кількість тварин */
 };
 
@@ -38,7 +39,7 @@ enum animal_type {
 struct animal {
 	enum animal_type type; /**< тип тварини */
 	unsigned int height; /**< ріст тварини, см */
-	unsigned int weight; /**< маса тварини, грам */
+	unsigned int weight; /**< маса тварини, кг */
 };
 
 /**
